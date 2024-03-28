@@ -100,7 +100,6 @@ This project uses the following dependencies:
 - **bcrypt:** Library for hashing passwords
 - **jsonwebtoken:** Library for generating and verifying JSON Web Tokens
 - **cookie-parser:** Middleware for parsing cookies
-- **body-parser:** Middleware for parsing request bodies
 - **cors:** Middleware for configuring Cross-Origin Resource Sharing (CORS)
 - **dotenv:** Library for loading environment variables from a .env file
 
