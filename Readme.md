@@ -11,16 +11,16 @@ Before running this application, make sure you have the following installed:
 
 ## Getting Started
 
-1. Clone the repository:
+1. Clone this repository:
 
     ```
-    git clone https://github.com/your-username/your-repo.git
+    https://github.com/g7vind/nodejs-login-register-authentication.git
     ```
 
 2. Navigate to the project directory:
 
     ```
-    cd your-repo
+    cd nodejs-login-register-authentication
     ```
 
 3. Install the dependencies:
