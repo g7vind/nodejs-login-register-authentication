@@ -43,7 +43,7 @@ Before running this application, make sure you have the following installed:
 5. Start the server:
 
     ```
-    npm start
+    npm run dev
     ```
 
    The server will start running on the specified port (or default to 3000 if not set).
