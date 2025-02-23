@@ -34,7 +34,6 @@ Before running this application, make sure you have the following installed:
     ```
     DB=<your_mongodb_connection_string>
     JWT_SECRET=<your_jwt_secret_key>
-    SALT=<bcrypt_salt_rounds>
     PORT=<your_desired_port>
     ```
 
@@ -75,11 +74,10 @@ Before running this application, make sure you have the following installed:
     "password": "your-password"
   }
 
-### User Data Retrieval (Protected)
+### All User Retrival
 
-- **URL:** `/api/user`
+- **URL:** `/v1/api/allusers`
 - **Method:** `GET`
-- **Authentication:** JWT token required (sent as a cookie named authToken)
 
 ---
 
