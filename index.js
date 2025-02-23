@@ -1,29 +1,21 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose');
-const authRouter = require('./routes/auth');
+const authRouter = require('./routes/auth.route');
 const cookieParser = require('cookie-parser');
-// const bodyParser = require('body-parser');
 const cors = require('cors');
+const morgan = require('morgan');
+const connectDB = require('./config/db');
 require('dotenv').config();
 
+connectDB();
 app.use(cors({ credentials: true})); // Replace with your client URL
-
-// Connect to MongoDB
-mongoose.connect(process.env.DB, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => console.error('MongoDB connection error:', err));
-
-// Middleware to parse JSON request bodies and cookies
 app.use(express.json());
-// app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(morgan('dev'));
 
-// Routes
-app.use('/api', authRouter);
+
+
+app.use('/v1/api', authRouter);
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
