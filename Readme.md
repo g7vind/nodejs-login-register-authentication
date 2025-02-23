@@ -32,7 +32,7 @@ Before running this application, make sure you have the following installed:
 4. Create a `.env` file in the project root directory and add the following environment variables:
 
     ```
-    DB=<your_mongodb_connection_string>
+    MONGO_URI=<your_mongodb_connection_string>
     JWT_SECRET=<your_jwt_secret_key>
     PORT=<your_desired_port>
     ```
