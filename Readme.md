@@ -51,7 +51,7 @@ Before running this application, make sure you have the following installed:
 
 ### User Registration
 
-- **URL:** `/api/signup`
+- **URL:** `/v1/api/register`
 - **Method:** `POST`
 - **Request Body:**
   ```json
@@ -65,7 +65,7 @@ Before running this application, make sure you have the following installed:
 
 ### User Login
 
-- **URL:** `/api/signin`
+- **URL:** `/v1/api/login`
 - **Method:** `POST`
 - **Request Body:**
   ```json
@@ -83,8 +83,8 @@ Before running this application, make sure you have the following installed:
 
 ### User Logout
 
-- **URL:** `/api/logout`
-- **Method:** `POST`
+- **URL:** `/v1/api/logout`
+- **Method:** `GET`
 - **Authentication:** JWT token required (sent as a cookie named authToken)
 
 ---
